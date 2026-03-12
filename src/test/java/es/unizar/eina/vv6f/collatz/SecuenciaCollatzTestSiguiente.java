@@ -26,18 +26,4 @@ public class SecuenciaCollatzTestSiguiente {
         }
         return tests;
     }
-
-    @Test
-    @DisplayName("assert siguienteCollatz(0) lanza IllegalArgumentException")
-    public void testSiguienteCollatz_0() {
-        assertThrows(IllegalArgumentException.class,
-                () -> SecuenciaCollatz.siguienteCollatz(0));
-    }
-
-    @Test
-    @DisplayName("assert siguienteCollatz(-1) lanza IllegalArgumentException")
-    public void testSiguienteCollatz_negativo() {
-        assertThrows(IllegalArgumentException.class,
-                () -> SecuenciaCollatz.siguienteCollatz(-1));
-    }
 }

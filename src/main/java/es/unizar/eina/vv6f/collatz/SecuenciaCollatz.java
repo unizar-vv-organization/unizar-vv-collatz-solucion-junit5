@@ -13,11 +13,8 @@ public class SecuenciaCollatz {
 	 *            el valor positivo del que se quiere determinar su sucesor.
 	 * @return el término que sigue a «n» en una secuencia de Collatz.
 	 */
-	public static long siguienteCollatz(long n) {
-		if (n <= 0) {
-			throw new IllegalArgumentException();
-		}
-		else if (n % 2 == 0) {
+	static long siguienteCollatz(long n) {
+		if (n % 2 == 0) {
 			return n / 2;
 		}
 		else {
