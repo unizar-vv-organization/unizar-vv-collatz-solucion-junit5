@@ -22,7 +22,7 @@ public class SecuenciaCollatz {
 		}
 	}
 
-	private long inicio;
+	private final long inicio;
 
 	/*
 	 * @param inicio

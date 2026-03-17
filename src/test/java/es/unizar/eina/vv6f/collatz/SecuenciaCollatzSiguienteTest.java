@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 import static es.unizar.eina.vv6f.collatz.SecuenciaCollatz.siguienteCollatz;
 
-public class SecuenciaCollatzTestSiguiente {
+public class SecuenciaCollatzSiguienteTest {
 
     @ParameterizedTest(name="siguienteCollatz({0}) es {1}")
     @CsvSource({

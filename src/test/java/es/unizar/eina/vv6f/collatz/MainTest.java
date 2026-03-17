@@ -12,8 +12,7 @@ import java.util.Scanner;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MainTest {
-    @SuppressWarnings("FieldCanBeLocal")
-    private static int SOLUTION = 837_799;
+    private static final int SOLUTION = 837_799;
     private PrintStream oldOut;
     private ByteArrayOutputStream fakeOut;
     private Scanner fakeOutScanner;
@@ -26,7 +25,7 @@ class MainTest {
     }
 
     @Test
-    public void main() {
+    public void testMain() {
         Main.main(null);
         fakeOutScanner = new Scanner(fakeOut.toString());
         assertEquals(SOLUTION, fakeOutScanner.nextInt());
